@@ -63,7 +63,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: Researcher 
-          company: MATE HU
+          company: Hungarian University of Agriculture and Life Sciences 
           company_url: 'https://en.uni-mate.hu/'
           company_logo: mate_hu
           location: Gödöllő
@@ -75,8 +75,8 @@ sections:
               * Proximal Soil Sensing
               * Large spatial data modeling
         - title: PhD/Post Doctoral
-          company: Federal Rural University of Rio de Janeiro - UFRRJ 
-          company_url: ''
+          company: Federal Rural University of Rio de Janeiro  
+          company_url: 'https://ufrrj.br/'
           company_logo: ufrrj-logo
           location: Rio de Janeiro
           date_start: '2016-03-01'
