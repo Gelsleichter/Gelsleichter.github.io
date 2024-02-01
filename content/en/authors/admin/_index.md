@@ -92,25 +92,25 @@ skills:
     items:
       - name: Diving
         description: ''
-        percent: 60
+        percent: 90
         icon: water
+        icon_pack: fas
+      - name: Snowboarding 
+        description: ''
+        percent: 70
+        icon: snowflake
         icon_pack: fas
       - name: Cooking 
         description: ''
-        percent: 100
+        percent: 60
         icon: pizza-slice
         icon_pack: fas
       - name: Coffee
         description: ''
-        percent: 100
+        percent: 80
         icon: mug-saucer
         icon_pack: fas
-      - name: Snowboarding 
-        description: ''
-        percent: 50
-        icon: snowflake
-        icon_pack: fas
-
+      
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
