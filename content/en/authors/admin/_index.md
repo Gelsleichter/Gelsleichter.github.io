@@ -68,10 +68,15 @@ skills:
         icon_pack: fab
       - name: Zotero
         description: ''
-        percent: 100
+        percent: 90
         icon: chart-line
         icon_pack: fas
       - name: Google Earth Engine 
+        description: ''
+        percent: 80
+        icon: earth-americas
+        icon_pack: fas
+      - name: SQL 
         description: ''
         percent: 40
         icon: database
