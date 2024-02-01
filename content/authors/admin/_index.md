@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Dr.
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Yuri
+last_name: Gelsleichter 
 
 # Status emoji
 status:
@@ -17,51 +17,61 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Digital Soil Mapper
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Hungarian University of Agriculture and Life Sciences
+    url: https://en.uni-mate.hu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Accomplished researcher and educator specializing in Geomatics and coding, with a strong foundation in Digital Soil Mapping, Proximal Soil Sensing, and Data Visualization. Holds a Ph.D. in Science, Technology, and Innovation in Agriculture. Demonstrated proficiency in R programming, machine learning techniques, and data analytics. Experienced in international collaborations and committed to advancing computational reproducibility and Open Science principles.
 
 # Interests to show in About widget
 interests:
+  - Digital Soil Mapping
+  - Soil spectroscopy
+  - Soil classification
+  - R coding
+  - Data visualization
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: PhD in Digital Soil Mapping
+      institution: Federal Rural University of Rio de Janeiro 
+      year: 2020
+    - course: BSc in Environmental Engineering
+      institution: University of Southern Santa Catarina - UNISUL
+      year: 2015
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
   - name: Technical
     items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: python
-        icon_pack: fab
       - name: Data Science
         description: ''
         percent: 100
         icon: chart-line
         icon_pack: fas
-      - name: SQL
+      - name: R 
+        description: ''
+        percent: 100
+        icon: chart-line
+        icon_pack: fas
+      - name: Python
+        description: ''
+        percent: 50
+        icon: python
+        icon_pack: fab
+      - name: Zotero
+        description: ''
+        percent: 100
+        icon: chart-line
+        icon_pack: fas
+      - name: Google Earth Engine 
         description: ''
         percent: 40
         icon: database
@@ -70,12 +80,12 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Diving
         description: ''
         percent: 60
         icon: person-hiking
         icon_pack: fas
-      - name: Cats
+      - name: Cooking 
         description: ''
         percent: 100
         icon: cat
@@ -96,16 +106,16 @@ social:
     link: '/#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: https://x.com/y_gelsleichter
     label: Follow me on Twitter
     display:
       header: true
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com.br/citations?user=rLytyAYAAAAJ&hl=en&oi=ao
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/gelsleichter
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/
@@ -120,5 +130,5 @@ social:
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Yuri Gelsleichter is a researcher of Digital Soil Mapping at MATE university. His research interests include Proximal Soil Sensing and R coding. 
 {style="text-align: justify;"}
