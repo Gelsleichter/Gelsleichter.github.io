@@ -118,7 +118,7 @@ social:
     link: https://github.com/gelsleichter
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/yurigelsleichter/ 
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -130,5 +130,5 @@ social:
 highlight_name: true
 ---
 
-Yuri Gelsleichter is a researcher of Digital Soil Mapping at MATE university. His research interests include Proximal Soil Sensing and R coding. 
+Yuri Gelsleichter is a researcher of Digital Soil Mapping at MATE University. His research interests include Proximal Soil Sensing and R coding. 
 {style="text-align: justify;"}
