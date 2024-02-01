@@ -3,28 +3,28 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 defaultContentLanguage: pt
-defaultContentLanguageInSubdir: true
+# defaultContentLanguageInSubdir: true
 # languages:
-  pt:
-    contentDir: content/pt
-    disabled: false
-    languageCode: pt-BR
-    languageDirection: ltr
-    languageName: Portuguese
-    params:
-      subtitle: Referências, Tutoriais e Explicações 
-    title: Documentação de Projeto 
-    weight: 1
-  en:
-    contentDir: content/en
-    disabled: false
-    languageCode: en-US
-    languageDirection: ltr
-    languageName: English
-    params:
-      subtitle: Reference, Tutorials, and Explanations
-    title: Project Documentation
-    weight: 2
+ pt:
+   contentDir: content/pt
+   disabled: false
+   languageCode: pt-BR
+   languageDirection: ltr
+   languageName: Portuguese
+   params:
+     subtitle: Referências, Tutoriais e Explicações 
+   title: Documentação de Projeto 
+   weight: 1
+ en:
+   contentDir: content/en
+   disabled: false
+   languageCode: en-US
+   languageDirection: ltr
+   languageName: English
+   params:
+     subtitle: Reference, Tutorials, and Explanations
+   title: Project Documentation
+   weight: 2
     
 # Default language
 # en:
