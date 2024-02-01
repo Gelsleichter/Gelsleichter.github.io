@@ -82,8 +82,8 @@ sections:
           date_start: '2016-03-01'
           date_end: '2020-03-31'
           description: Mapping Itatiaia's National Park Soils with Proximal Soil Spectral Information.
-###    design:
-###      columns: '2'
+    design:
+      columns: '2'
 ###  - block: accomplishments
 ###    content:
 ###      # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
@@ -180,14 +180,14 @@ sections:
 ###      view: showcase
 ###      # For Showcase view, flip alternate rows?
 ###      flip_alt_rows: false
-###  - block: markdown
-###    content:
+  - block: markdown
+    content:
       title: Gallery
       subtitle: ''
       text: |-
         {{< gallery album="demo" >}}
-###    design:
-###      columns: '1'
+    design:
+      columns: '1'
 ###  - block: collection
 ###    id: featured
 ###    content:
