@@ -5,14 +5,14 @@
 defaultContentLanguage: pt
 defaultContentLanguageInSubdir: true
 languages:
-  de:
-    contentDir: content/de
+  pt:
+    contentDir: content/pt
     disabled: false
     languageCode: pt-BR
     languageDirection: ltr
     languageName: Portuguese
     params:
-      subtitle: Referencias, Tutoriais e Explicações 
+      subtitle: Referências, Tutoriais e Explicações 
     title: Documentação de Projeto 
     weight: 1
   en:
