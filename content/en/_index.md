@@ -62,27 +62,26 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+        - title: Researcher 
+          company: Hungarian University of Agriculture and Life Sciences 
+          company_url: 'https://en.uni-mate.hu/'
+          company_logo: mate_hu
+          location: Gödöllő
+          date_start: '2021-02-01'
           date_end: ''
           description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              Research topics:
+              * Digital Soil Mapping
+              * Proximal Soil Sensing
+              * Large spatial data modeling
+        - title: PhD/Post Doctoral
+          company: Federal Rural University of Rio de Janeiro  
+          company_url: 'https://ufrrj.br/'
+          company_logo: ufrrj-logo
+          location: Rio de Janeiro
+          date_start: '2016-03-01'
+          date_end: '2020-03-31'
+          description: Mapping Itatiaia's National Park Soils with Proximal Soil Spectral Information.
     design:
       columns: '2'
 ###  - block: accomplishments
@@ -181,14 +180,14 @@ sections:
 ###      view: showcase
 ###      # For Showcase view, flip alternate rows?
 ###      flip_alt_rows: false
-###  - block: markdown
-###    content:
-###      title: Gallery
-###      subtitle: ''
-###      text: |-
-###        {{< gallery album="demo" >}}
-###    design:
-###      columns: '1'
+  - block: markdown
+    content:
+      title: Gallery
+      subtitle: ''
+      text: |-
+        {{< gallery album="demo" >}}
+    design:
+      columns: '1'
 ###  - block: collection
 ###    id: featured
 ###    content:
