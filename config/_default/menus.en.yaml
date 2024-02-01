@@ -19,6 +19,9 @@ main:
 #  - name: Publications
 #    url: '#featured'
 #    weight: 50
+  - name: R code
+    url: 'https://gelsleichter.github.io/R_coding/docs/'
+    weight: 50
   - name: Contact
     url: '#contact'
     weight: 60
