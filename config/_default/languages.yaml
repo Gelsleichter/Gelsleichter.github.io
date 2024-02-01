@@ -2,33 +2,33 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-defaultContentLanguage: pt
+#defaultContentLanguage: pt
 # defaultContentLanguageInSubdir: true
 # languages:
- pt:
-   contentDir: content/pt
-   disabled: false
-   languageCode: pt-BR
-   languageDirection: ltr
-   languageName: Portuguese
-   params:
-     subtitle: Referências, Tutoriais e Explicações 
-   title: Documentação de Projeto 
-   weight: 1
- en:
-   contentDir: content/en
-   disabled: false
-   languageCode: en-US
-   languageDirection: ltr
-   languageName: English
-   params:
-     subtitle: Reference, Tutorials, and Explanations
-   title: Project Documentation
-   weight: 2
+#  pt:
+#    contentDir: content/pt
+#    disabled: false
+#    languageCode: pt-BR
+#    languageDirection: ltr
+#    languageName: Portuguese
+#    params:
+#      subtitle: Referências, Tutoriais e Explicações 
+#    title: Documentação de Projeto 
+#    weight: 1
+#  en:
+#    contentDir: content/en
+#    disabled: false
+#    languageCode: en-US
+#    languageDirection: ltr
+#    languageName: English
+#    params:
+#      subtitle: Reference, Tutorials, and Explanations
+#    title: Project Documentation
+#    weight: 2
     
 # Default language
-# en:
-  # languageCode: en-us
+ en:
+   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 
