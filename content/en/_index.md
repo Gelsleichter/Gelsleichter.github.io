@@ -235,10 +235,10 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
+        Form in development.
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
+      email: gelsleichter.yuri.andrei@uni-mate.hu
+      # phone: 888 888 88 88
       appointment_url: 'https://calendly.com'
       address:
         street: 450 Serra Mall
@@ -253,17 +253,17 @@ sections:
         - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
+        latitude: '47.59300362271109'
+        longitude: '19.36129360709387'  
       contact_links:
         - icon: twitter
           icon_pack: fab
           name: DM Me
-          link: 'https://twitter.com/Twitter'
+          link: 'https://twitter.com/y_gelsleichter'
         - icon: skype
           icon_pack: fab
           name: Skype Me
-          link: 'skype:echo123?call'
+          link: 'live:yuri.ambiental'
         - icon: video
           icon_pack: fas
           name: Zoom Me
