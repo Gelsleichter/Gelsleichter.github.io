@@ -77,7 +77,7 @@ sections:
         - title: PhD/Post Doctoral
           company: Federal Rural University of Rio de Janeiro - UFRRJ 
           company_url: ''
-          ### company_logo: ufrrj
+          company_logo: ufrrj-logo
           location: Rio de Janeiro
           date_start: '2016-03-01'
           date_end: '2020-03-31'
