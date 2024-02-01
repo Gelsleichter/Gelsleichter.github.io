@@ -4,7 +4,7 @@
 
 defaultContentLanguage: pt
 defaultContentLanguageInSubdir: true
-languages:
+# languages:
   pt:
     contentDir: content/pt
     disabled: false
