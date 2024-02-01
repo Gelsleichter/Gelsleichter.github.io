@@ -66,11 +66,11 @@ skills:
         percent: 50
         icon: python
         icon_pack: fab
-      - name: Zotero
-        description: ''
-        percent: 90
-        icon: chart-line
-        icon_pack: fas
+###      - name: Zotero
+###        description: ''
+###        percent: 90
+###        icon: chart-line
+###        icon_pack: fas
       - name: Google Earth Engine 
         description: ''
         percent: 80
@@ -88,17 +88,22 @@ skills:
       - name: Diving
         description: ''
         percent: 60
-        icon: person-hiking
+        icon: water
         icon_pack: fas
       - name: Cooking 
         description: ''
         percent: 100
-        icon: cat
+        icon: pizza-slice
         icon_pack: fas
-      - name: Photography
+      - name: Coffee
         description: ''
-        percent: 80
-        icon: camera-retro
+        percent: 100
+        icon: mug-saucer
+        icon_pack: fas
+      - name: Snowboarding 
+        description: ''
+        percent: 50
+        icon: snowflake
         icon_pack: fas
 
 # Social/Academic Networking
@@ -114,7 +119,7 @@ social:
     link: https://x.com/y_gelsleichter
     label: Follow me on Twitter
     display:
-      header: true
+      header: false
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com.br/citations?user=rLytyAYAAAAJ&hl=en&oi=ao
