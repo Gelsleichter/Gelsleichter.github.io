@@ -65,7 +65,7 @@ sections:
         - title: Researcher 
           company: MATE HU
           company_url: 'https://en.uni-mate.hu/'
-          ### company_logo: mate_hu
+          company_logo: mate_hu
           location: Gödöllő
           date_start: '2021-02-01'
           date_end: ''
