@@ -61,6 +61,11 @@ skills:
         percent: 100
         icon: chart-line
         icon_pack: fas
+      - name: Linux
+        description: ''
+        percent: 90
+        icon: linux
+        icon_pack: fab
       - name: Python
         description: ''
         percent: 50
