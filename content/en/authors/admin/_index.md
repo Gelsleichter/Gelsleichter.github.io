@@ -114,13 +114,13 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: x-twitter
+  - icon: twitter
     icon_pack: fab
     link: https://x.com/y_gelsleichter
     label: Follow me on Twitter
     display:
       header: false
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  - icon: google-scholar # graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com.br/citations?user=rLytyAYAAAAJ&hl=en&oi=ao
   - icon: github
