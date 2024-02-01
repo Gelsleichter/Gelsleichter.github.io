@@ -234,7 +234,7 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Form in development.
+### Above formulary        Form in development.
       # Contact (add or remove contact options as necessary)
       email: gelsleichter.yuri.andrei@uni-mate.hu
       ### phone: 888 888 88 88
@@ -267,7 +267,7 @@ sections:
 ###          icon_pack: fas
 ###          name: Zoom Me
 ###          link: 'https://zoom.com'
-###      # Automatically link email and phone or display as text?
+### Form start      # Automatically link email and phone or display as text?
 ###      autolink: true
 ###      # Email form provider
 ###      form:
@@ -276,7 +276,7 @@ sections:
 ###          id:
 ###        netlify:
 ###          # Enable CAPTCHA challenge to reduce spam?
-###          captcha: false
+### Form end          captcha: false
     design:
       columns: '2'
 ---
