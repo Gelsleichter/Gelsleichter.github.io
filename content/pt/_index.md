@@ -39,12 +39,12 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: Biografia 
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: skills
     content:
-      title: Skills
+      title: Habilidades
       text: ''
       # Choose a user to display skills from (a folder name within `content/authors/`)
       username: admin
@@ -52,7 +52,7 @@ sections:
       columns: '1'
   - block: experience
     content:
-      title: Experience
+      title: Experiência
       # Date format for experience
       #   Refer to https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -62,7 +62,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Researcher 
+        - title: Pesquisador  
           company: Hungarian University of Agriculture and Life Sciences 
           company_url: 'https://en.uni-mate.hu/'
           company_logo: mate_hu
@@ -71,17 +71,17 @@ sections:
           date_end: ''
           description: |2-
               Research topics:
-              * Digital Soil Mapping
+              * Mapeamento Digital de Solos 
               * Proximal Soil Sensing
               * Large spatial data modeling
         - title: PhD/Post Doctoral
-          company: Federal Rural University of Rio de Janeiro  
+          company: Universidade Federal Rural do Rio de Janeiro  
           company_url: 'https://ufrrj.br/'
           company_logo: ufrrj-logo
           location: Rio de Janeiro
           date_start: '2016-03-01'
           date_end: '2020-03-31'
-          description: Mapping Itatiaia's National Park Soils with Proximal Soil Spectral Information.
+          description: Mapeamento dos solos do Parque Nacional de Itatiaia com dados proximais espectrais.
     design:
       columns: '2'
 ###  - block: accomplishments
@@ -182,7 +182,7 @@ sections:
 ###      flip_alt_rows: false
   - block: markdown
     content:
-      title: Gallery
+      title: Galeria
       subtitle: ''
       text: |-
         {{< gallery album="demo" >}}
@@ -231,7 +231,7 @@ sections:
   - block: contact
     id: contact
     content:
-      title: Contact
+      title: Contato
       subtitle:
       text: |-
 ### Above formulary        Form in development.
