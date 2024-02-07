@@ -1,57 +1,57 @@
 ---
-# Display name
+# Nome de exibição
 title: Dr.
 
-# Name pronunciation (optional)
+# Pronúncia do nome (opcional)
 # name_pronunciation: Chien Shiung Wu
 
-# Full name (for SEO)
+# Nome completo (para SEO)
 first_name: Yuri
 last_name: Gelsleichter 
 
-# Status emoji
+# Emoji de status
 status:
   icon: ☕️
 
-# Is this the primary user of the site?
+# Este é o usuário principal do site?
 superuser: true
 
-# Role/position/tagline
-role: Digital Soil Mapper
+# Função/cargo/slogan
+role: Mapeador Digital de Solos
 
-# Organizations/Affiliations to show in About widget
+# Organizações/Afiliações a serem exibidas no widget Sobre
 organizations:
-  - name: Hungarian University of Agriculture and Life Sciences
+  - name: Universidade Húngara de Agricultura e Ciências da Vida
     url: https://en.uni-mate.hu/
 
-# Short bio (displayed in user profile at end of posts)
-bio: Accomplished researcher and educator specializing in Geomatics and coding, with a strong foundation in Digital Soil Mapping, Proximal Soil Sensing, and Data Visualization. Holds a Ph.D. in Science, Technology, and Innovation in Agriculture. Demonstrated proficiency in R programming, machine learning techniques, and data analytics. Experienced in international collaborations and committed to advancing computational reproducibility and Open Science principles.
+# Biografia curta (exibida no perfil do usuário no final das postagens)
+bio: Pesquisador e educador realizado especializado em Geomática e codificação, com uma sólida base em Mapeamento Digital de Solos, Sensoriamento Próximo do Solo e Visualização de Dados. Possui um Ph.D. em Ciência, Tecnologia e Inovação na Agricultura. Proficiência demonstrada em programação R, técnicas de aprendizado de máquina e análise de dados. Experiência em colaborações internacionais e compromisso com o avanço da reprodutibilidade computacional e dos princípios da Ciência Aberta.
 
-# Interests to show in About widget
+# Interesses a serem exibidos no widget Sobre
 interests:
-  - Digital Soil Mapping
-  - Soil spectroscopy
-  - Soil classification
-  - R coding
-  - Data visualization
-  - Artificial Intelligence
+  - Mapeamento Digital de Solos
+  - Espectroscopia de Solo
+  - Classificação de Solo
+  - Codificação em R
+  - Visualização de Dados
+  - Inteligência Artificial
 
-# Education to show in About widget
+# Educação a ser exibida no widget Sobre
 education:
   courses:
-    - course: PhD in Digital Soil Mapping
-      institution: Federal Rural University of Rio de Janeiro 
+    - course: Doutorado em Mapeamento Digital de Solos
+      institution: Universidade Federal Rural do Rio de Janeiro 
       year: 2020
-    - course: BSc in Environmental Engineering
-      institution: University of Southern Santa Catarina - UNISUL
+    - course: Bacharelado em Engenharia Ambiental
+      institution: Universidade do Sul de Santa Catarina - UNISUL
       year: 2015
 
-# Skills
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
+# Habilidades
+# Para ícones disponíveis, consulte: https://docs.hugoblox.com/getting-started/page-builder/#icons
 skills:
-  - name: Technical
+  - name: Técnico
     items:
-      - name: Data Science
+      - name: Ciência de Dados
         description: ''
         percent: 100
         icon: chart-line
@@ -80,26 +80,26 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Diving
+      - name: Mergulho
         description: ''
         percent: 60
         icon: person-hiking
         icon_pack: fas
-      - name: Cooking 
+      - name: Culinária 
         description: ''
         percent: 100
         icon: cat
         icon_pack: fas
-      - name: Photography
+      - name: Fotografia
         description: ''
         percent: 80
         icon: camera-retro
         icon_pack: fas
 
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
+# Redes Sociais/Acadêmicas
+# Para ícones disponíveis, consulte: https://docs.hugoblox.com/getting-started/page-builder/#icons
+#   Para um link de e-mail, use o ícone "fas", pacote de ícones "envelope" e um link no
+#   formato "mailto:seu-email@example.com" ou "/#contact" para widget de contato.
 social:
   - icon: envelope
     icon_pack: fas
@@ -107,10 +107,10 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://x.com/y_gelsleichter
-    label: Follow me on Twitter
+    label: Siga-me no Twitter
     display:
       header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  - icon: graduation-cap # Alternativamente, use o ícone `google-scholar` do pacote de ícones `ai`
     icon_pack: fas
     link: https://scholar.google.com.br/citations?user=rLytyAYAAAAJ&hl=en&oi=ao
   - icon: github
@@ -119,16 +119,16 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/yurigelsleichter/ 
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
+  # Link para um PDF do seu currículo
+  # Para usar: copie seu currículo para `static/uploads/resume.pdf`, ative os ícones `ai` em `params.yaml`,
+  # e descomente as linhas abaixo.
   - icon: cv
     icon_pack: ai
     link: uploads/resume.pdf
 
-# Highlight the author in author lists? (true/false)
+# Destacar o autor em listas de autores? (true/false)
 highlight_name: true
 ---
 
-Yuri Gelsleichter is a researcher of Digital Soil Mapping at MATE University. His research interests include Proximal Soil Sensing and R coding. 
+Yuri Gelsleichter é um pesquisador de Mapeamento Digital de Solos na Universidade MATE. Seus interesses de pesquisa incluem Sensoriamento Próximo do Solo e codificação em R. 
 {style="text-align: justify;"}
