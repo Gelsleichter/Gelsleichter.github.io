@@ -74,7 +74,7 @@ sections:
               * Mapeamento Digital de Solos 
               * Proximal Soil Sensing
               * Large spatial data modeling
-        - title: PhD/Post Doctoral
+        - title: Doutorado e Pós-doutorado
           company: Universidade Federal Rural do Rio de Janeiro  
           company_url: 'https://ufrrj.br/'
           company_logo: ufrrj-logo
