@@ -1,0 +1,105 @@
+/*
+ESTILOS DA SEÇÃO DE EXPERIÊNCIA
+Este arquivo controla a aparência da seção de experiência profissional.
+Mostra um timeline com trabalhos e projetos anteriores.
+
+COMO FUNCIONA:
+1. .experience: container principal da seção
+2. .experience-box: cada caixa de experiência
+3. .experience-content: conteúdo de cada experiência
+4. .timeline: linha do tempo visual
+
+DICAS PARA INICIANTES:
+- position: relative/absolute: para posicionar elementos
+- transform: para mover/rotacionar elementos
+- ::before/::after: para criar elementos decorativos
+*/
+
+/* Container principal */
+.experience {
+    background-color: var(--bg-color-02);
+    padding: 6rem 0rem;  /* Controla o espaçamento Vertical após a seção */
+    transition: background-color 0.3s;
+}
+
+/* Título da seção */
+.experience h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Container da timeline */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+/* Caixa de cada experiência */
+.experience-item {
+    background-color: var(--bg-color-01);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Título da experiência */
+.experience-item h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Empresa */
+.experience-item .company {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Localização e período */
+.experience-item .location,
+.experience-item .period {
+    color: var(--text-color-grey);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Lista de habilidades */
+.experience-item ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.experience-item ul li {
+    color: var(--text-color);
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-item ul li:before {
+    content: "∠ ";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience {
+        padding: 2rem 1rem;
+    }
+}

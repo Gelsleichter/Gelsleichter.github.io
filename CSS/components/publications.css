@@ -1,0 +1,140 @@
+/*
+ESTILOS DA SEÇÃO DE PUBLICAÇÕES
+Este arquivo controla a aparência da seção de publicações acadêmicas.
+Mostra artigos, papers e outras publicações científicas.
+
+COMO FUNCIONA:
+1. .publications: container principal da seção
+2. .publication-box: cada publicação individual
+3. .publication-layer: detalhes de cada publicação
+4. Usa cards com efeitos de hover
+
+DICAS PARA INICIANTES:
+- display: flex/grid: organiza elementos
+- hover: efeitos ao passar o mouse
+- transition: faz animações suaves
+*/
+
+/* Container principal */
+.publications {
+    background-color: var(--bg-color-02); /* Cor de fundo */
+    padding: 5rem 10%;            /* Espaço interno */
+    transition: background-color 0.3s; /* Animação de cor */
+}
+
+/* Título da seção */
+.publications h2 {
+    font-size: 2.5rem;             /* Tamanho da fonte */
+    margin-bottom: 3rem;           /* Espaço abaixo */
+    text-align: center;            /* Centraliza texto */
+    color: var(--text-color);      /* Cor do texto */
+}
+
+/* Grid de publicações */
+.publications-container {
+    display: grid;                 /* Organiza em grade */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 2rem;                    /* Espaço entre cards */
+    padding: 0 2rem;              /* Espaço nas laterais */
+}
+
+/* Card de publicação */
+.publication-box {
+    position: relative;            /* Posição relativa */
+    border-radius: 1rem;           /* Cantos arredondados */
+    box-shadow: 0 0 1rem var(--shadow-color); /* Sombra suave */
+    overflow: hidden;             /* Oculta conteúdo excedente */
+    display: flex;                /* Organiza em linha */
+    aspect-ratio: 4/3;            /* Proporção do card */
+}
+
+/* Imagem do card */
+.publication-box img {
+    width: 100%;                  /* Largura da imagem */
+    height: 100%;                 /* Altura da imagem */
+    object-fit: cover;            /* Cobertura da imagem */
+    transition: 0.5s ease;        /* Animação da imagem */
+}
+
+/* Efeito hover na imagem */
+.publication-box:hover img {
+    transform: scale(1.1);         /* Aumenta imagem ao passar mouse */
+}
+
+/* Camada de detalhes do card */
+.publication-layer {
+    position: absolute;            /* Posição absoluta */
+    bottom: 0;                    /* Posição inferior */
+    left: 0;                      /* Posição esquerda */
+    width: 100%;                  /* Largura da camada */
+    height: 100%;                 /* Altura da camada */
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color)); /* Gradiente de cor */
+    display: flex;                /* Organiza em linha */
+    flex-direction: column;       /* Direção da flexbox */
+    align-items: center;          /* Centraliza verticalmente */
+    justify-content: center;      /* Centraliza horizontalmente */
+    text-align: center;           /* Centraliza texto */
+    padding: 2rem;                /* Espaço interno */
+    transform: translateY(100%);  /* Posição inicial da camada */
+    transition: 0.5s ease;        /* Animação da camada */
+}
+
+/* Efeito hover na camada */
+.publication-box:hover .publication-layer {
+    transform: translateY(0);      /* Mostra camada ao passar mouse */
+}
+
+/* Título da publicação */
+.publication-layer h3 {
+    font-size: 1.4rem;            /* Tamanho da fonte */
+    color: var(--bg-color-02);    /* Cor do texto */
+    margin-bottom: 1rem;          /* Espaço abaixo */
+}
+
+/* Descrição da publicação */
+.publication-layer p {
+    font-size: 0.9rem;            /* Tamanho da fonte */
+    color: var(--bg-color-02);    /* Cor do texto */
+    margin: 0.3rem 0;             /* Espaço entre linhas */
+}
+
+/* DOI da publicação */
+.publication-layer .doi a {
+    color: var(--bg-color-02);    /* Cor do link */
+    text-decoration: underline;   /* Sublinha do link */
+    transition: 0.3s;             /* Animação do link */
+}
+
+/* Efeito hover no DOI */
+.publication-layer .doi a:hover {
+    color: var(--bg-color-01);    /* Cor do link ao passar mouse */
+}
+
+/* Descrição da publicação */
+.publication-layer .description {
+    display: -webkit-box;         /* Exibe como caixa */
+    -webkit-line-clamp: 3;        /* Número de linhas */
+    -webkit-box-orient: vertical; /* Direção da caixa */
+    overflow: hidden;             /* Oculta conteúdo excedente */
+    margin: 1rem 0;               /* Espaço entre linhas */
+    line-clamp: 3;                /* Número de linhas */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .publications {
+        padding: 3rem 5%;        /* Reduz espaçamento */
+    }
+    
+    .publications-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+    
+    .publication-box {
+        height: 250px;            /* Altura do card em telas pequenas */
+    }
+    
+    .publication-layer h3 {
+        font-size: 1.2rem;        /* Reduz fonte em telas pequenas */
+    }
+}

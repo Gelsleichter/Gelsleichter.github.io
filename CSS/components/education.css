@@ -1,0 +1,106 @@
+/*
+ESTILOS DA SEÇÃO DE EDUCAÇÃO
+Este arquivo controla a aparência da seção de educação.
+Mostra formação acadêmica e cursos realizados.
+
+COMO FUNCIONA:
+1. .education: container principal da seção
+2. .education-box: cada caixa de formação
+3. .education-content: conteúdo de cada formação
+4. Usa um design de cards para mostrar cada item
+
+DICAS PARA INICIANTES:
+- display: grid: organiza elementos em grade
+- box-shadow: cria sombra ao redor do elemento
+- transition: faz animações suaves
+*/
+
+/* Container principal */
+.education {
+    background-color: var(--bg-color-01); /* Cor de fundo */
+    padding: 4rem 2rem;            /* Espaço interno */
+    transition: background-color 0.3s;
+}
+
+/* Título da seção */
+.education h2 {
+    font-size: 2.2rem;             /* Tamanho da fonte */
+    margin-bottom: 2rem;           /* Espaço abaixo */
+    text-align: center;            /* Centraliza texto */
+    color: var(--text-color);      /* Cor do texto */
+}
+
+/* Grid de cards de educação */
+.education-container {
+    display: grid;                 /* Organiza em grade */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 2rem;                    /* Espaço entre cards */
+    padding: 0 2rem;              /* Espaço nas laterais */
+}
+
+/* Card individual de educação */
+.education-item {
+    background-color: var(--bg-color-02); /* Cor de fundo */
+    padding: 2rem;                 /* Espaço interno */
+    border-radius: 1rem;           /* Cantos arredondados */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Efeito hover no card */
+.education-item:hover {
+    transform: translateY(-5px);   /* Move card para cima */
+}
+
+/* Título do curso */
+.education-item h3 {
+    color: var(--main-color);      /* Cor do texto */
+    font-size: 1.5rem;            /* Tamanho da fonte */
+    margin-bottom: 1rem;        /* Espaço abaixo */
+}
+
+/* Nome da instituição */
+.education-item .institution {
+    font-weight: 600;             /* Peso da fonte */
+    color: var(--text-color);     /* Cor do texto */
+    margin-bottom: 0.5rem;        /* Espaço abaixo */
+}
+
+/* Local e período */
+.education-item .location,
+.education-item .period {
+    color: var(--text-color-grey); /* Cor do texto */
+    font-size: 0.9rem;             /* Tamanho da fonte */
+    margin-bottom: 0.5rem;         /* Espaço abaixo */
+}
+
+/* Lista de habilidades/matérias */
+.education-item ul {
+    list-style: none;             /* Remove marcadores */
+    margin-top: 1rem;             /* Espaço acima */
+}
+
+.education-item ul li {
+    color: var(--text-color);     /* Cor do texto */
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.education-item ul li:before {
+    content: "∠";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .education-container {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+    
+    .education {
+        padding: 2rem 1rem;        /* Reduz espaçamento */
+    }
+}

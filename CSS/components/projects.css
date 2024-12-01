@@ -1,0 +1,111 @@
+/* Projects section styles */
+.projects {
+    background-color: var(--bg-color-01);
+    padding: 4rem 2rem;
+    transition: background-color 0.3s;
+}
+
+.projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.project-item {
+    background-color: var(--bg-color-02);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-item .period {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.project-item .website {
+    margin-bottom: 1rem;
+}
+
+.project-item .website a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.project-item .website a:hover {
+    text-decoration: underline;
+}
+
+.project-item .description {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-item .participation {
+    margin-bottom: 1.5rem;
+}
+
+.project-item .participation h4 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-item .participation p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.project-item .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-item .tags span {
+    background-color: var(--main-color);
+    color: var(--bg-color-01);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .projects {
+        padding: 2rem 1rem;
+    }
+    
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .project-item {
+        padding: 1.5rem;
+    }
+}

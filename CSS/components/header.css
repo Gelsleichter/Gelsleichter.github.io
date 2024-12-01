@@ -1,0 +1,195 @@
+/*
+ESTILOS DO CABEÇALHO
+Este arquivo controla a aparência do cabeçalho do site.
+O cabeçalho contém o logo, menu de navegação e botões de tema/idioma.
+
+COMO FUNCIONA:
+1. .header: estilo do cabeçalho inteiro
+2. .nav: estilo do menu de navegação
+3. .menu-hamburger: menu para telas pequenas
+4. .theme-lang-switcher: botões de tema e idioma
+
+DICAS PARA INICIANTES:
+- position: fixed: mantém elemento fixo na tela
+- display: flex: organiza elementos em linha/coluna
+- z-index: controla qual elemento fica na frente
+*/
+
+/* Cabeçalho principal */
+.header {
+    position: fixed;           /* Fixa o cabeçalho no topo */
+    top: 0;                   /* Alinha ao topo */
+    left: 0;                  /* Alinha à esquerda */
+    width: 100%;              /* Ocupa toda a largura */
+    padding: 1rem 6%;         /* Espaço interno */
+    background: var(--bg-color-01); /* Cor de fundo */
+    display: flex;            /* Organiza itens em linha */
+    justify-content: space-between; /* Espaça itens igualmente */
+    align-items: center;      /* Centraliza verticalmente */
+    z-index: 100;            /* Mantém acima de outros elementos */
+    transition: .3s;         /* Transição suave */
+}
+
+/* Logo do site */
+.logo {
+    font-size: 1.7rem;       /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    font-weight: 600;        /* Peso da fonte */
+    cursor: pointer;         /* Cursor de clique */
+}
+
+/* Menu de navegação */
+.nav {
+    display: flex;           /* Organiza em linha */
+    gap: 0.4rem;              /* Espaço entre itens */
+}
+
+.nav a {
+    font-size: 1.1rem;        /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    transition: .3s;          /* Transição suave */
+    padding: 0.5rem 1rem;        /* Espaço interno */
+}
+
+/* Item do menu ativo */
+.nav a.active {
+    color: var(--main-color); /* Cor de destaque */
+}
+
+/* Botões de tema e idioma */
+.theme-lang-switcher {
+    display: flex;           /* Organiza em linha */
+    gap: 1rem;              /* Espaço entre botões */
+    align-items: center;      /* Centraliza verticalmente */
+}
+
+.switcher-btn {
+    background: none;        /* Sem fundo */
+    border: none;           /* Sem borda */
+    color: var(--text-color); /* Cor do ícone */
+    cursor: pointer;        /* Cursor de clique */
+    display: flex;           /* Organiza em linha */
+    align-items: center;      /* Centraliza verticalmente */
+    gap: 0.5rem;              /* Espaço entre ícone e texto */
+    padding: 0.5rem;        /* Espaço interno */
+    border-radius: 0.5rem;        /* Borda arredondada */
+    transition: all 0.3s;       /* Transição suave */
+}
+
+.switcher-btn:hover {
+    background: var(--bg-color-02); /* Cor ao passar mouse */
+    color: var(--main-color); /* Cor ao passar mouse */
+}
+
+.switcher-btn i {
+    font-size: 1.2rem;       /* Tamanho do ícone */
+}
+
+.current-lang {
+    font-size: 0.9rem;       /* Tamanho da fonte */
+    font-weight: 600;        /* Peso da fonte */
+}
+
+/* Menu hamburguer (telas pequenas) */
+.menu-hamburger {
+    display: none;           /* Esconde por padrão */
+    cursor: pointer;         /* Cursor de clique */
+    padding: 0.5rem;        /* Espaço interno */
+    z-index: 102;            /* Mantém acima de outros elementos */
+}
+
+.bar1, .bar2, .bar3 {
+    width: 2rem;            /* Largura das barras */
+    height: 0.3rem;            /* Altura das barras */
+    background-color: var(--text-color); /* Cor das barras */
+    margin: 0.4rem 0;          /* Espaço entre barras */
+    transition: 0.3s ease;       /* Transição suave */
+}
+
+.change .bar1 {
+    transform: translate(0, 0.65rem) rotate(-45deg); /* Gira barra */
+}
+.change .bar2 {
+    opacity: 0;         /* Esconde barra do meio */
+}
+.change .bar3 {
+    transform: translate(0, -0.65rem) rotate(45deg); /* Gira barra */
+}
+
+/* Menu responsivo */
+.nav-responsive {
+    display: none;          /* Esconde por padrão */
+    position: fixed;        /* Fixa na tela */
+    top: 0;             /* Posição do topo */
+    left: 0;               /* Alinha à esquerda */
+    width: 100%;           /* Ocupa toda largura */
+    height: 100vh;           /* Ocupa toda altura */
+    background-color: var(--bg-color-01); /* Cor de fundo */
+    padding-top: 5rem;      /* Espaço interno */
+    z-index: 101;            /* Mantém acima de outros elementos */
+}
+
+.nav-responsive.active {
+    display: flex;         /* Mostra menu responsivo */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center;      /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha ao topo */
+}
+
+.nav-responsive a {
+    display: block;         /* Mostra como bloco */
+    padding: 1rem;        /* Espaço interno */
+    font-size: 1.2rem;       /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    text-align: center;      /* Centraliza texto */
+    width: 100%;           /* Ocupa toda largura */
+    transition: 0.3s ease;       /* Transição suave */
+}
+
+.nav-responsive a:hover {
+    color: var(--main-color); /* Cor ao passar mouse */
+    background-color: var(--bg-color-02); /* Cor ao passar mouse */
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .header {
+        padding: 1rem 4%;      /* Ajusta espaçamento */
+    }
+    
+    .menu-hamburger {
+        display: block;     /* Mostra menu hamburguer */
+    }
+    
+    .nav {
+        display: none;      /* Esconde menu normal */
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-hamburger {
+        display: none;     /* Esconde menu hamburguer */
+    }
+    
+    .nav {
+        display: flex;     /* Mostra menu normal */
+    }
+    
+    .nav-responsive {
+        display: none !important; /* Esconde menu responsivo */
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 1rem 9%;      /* Ajusta espaçamento */
+    }
+    
+    .logo {
+        font-size: 2rem;       /* Ajusta tamanho da fonte */
+    }
+    
+    .nav a {
+        font-size: 1.2rem;       /* Ajusta tamanho da fonte */
+    }
+}

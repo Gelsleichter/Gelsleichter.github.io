@@ -1,0 +1,98 @@
+/*
+ESTILOS GERAIS DAS SEÇÕES
+Este arquivo controla a aparência comum a todas as seções do site.
+Define estilos básicos que são compartilhados entre as seções.
+
+COMO FUNCIONA:
+1. section: estilo base para todas as seções
+2. .home e .about: estilos específicos para as seções de início e sobre
+3. Usa variáveis CSS para cores e tamanhos
+
+DICAS PARA INICIANTES:
+- min-height: altura mínima da seção
+- padding: espaço interno da seção
+- margin: espaço externo dos elementos
+*/
+
+/* Estilo base para todas as seções */
+section {
+    min-height: 50vh;             /* Altura mínima de 100% da tela */
+    padding: 4rem 4rem 2rem;       /* Espaço interno (topo direita baixo) */
+}
+
+/* Seções de início e sobre */
+.home, .about {
+    display: flex;                /* Exibe elementos em linha */
+    flex-direction: row;          /* Direção da linha */
+    justify-content: space-evenly; /* Espaçamento entre elementos */
+    align-items: center;          /* Alinha elementos verticalmente */
+}
+
+/* Imagens das seções de início e sobre */
+.home-img {
+    border-right: solid 0.6rem;   /* Borda direita */
+    border-bottom: solid 0.6rem;  /* Borda inferior */
+    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1; /* Efeito de borda */
+}
+
+.about-img {
+    border-left: solid 0.6rem;    /* Borda esquerda */
+    border-bottom: solid 0.6rem;  /* Borda inferior */
+    border-image: linear-gradient(225deg, transparent 50%, var(--main-color)) 1; /* Efeito de borda */
+}
+
+/* Imagens dentro das seções */
+.home-img img, .about-img img {
+    width: 100%;                  /* Largura da imagem */
+    object-fit: cover;            /* Ajusta imagem para preencher o espaço */
+}
+
+/* Seção sobre */
+.about {
+    background-color: var(--bg-color-02); /* Cor de fundo */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+/* Conteúdo das seções de início e sobre */
+.home-content, .about-content {
+    width: 45%;                   /* Largura do conteúdo */
+}
+
+/* Títulos das seções de início e sobre */
+.home-content h1, .about-content h1 {
+    font-weight: 700;             /* Peso da fonte */
+    line-height: 1.3;             /* Espaçamento entre linhas */
+}
+
+/* Subtítulos das seções de início e sobre */
+.home-content h3, .about-content h3 {
+    font-weight: 700;             /* Peso da fonte */
+    font-size: 1.6rem;            /* Tamanho da fonte */
+}
+
+/* Parágrafos das seções de início e sobre */
+.home-content p, .about-content p {
+    margin-top: 1.5rem;           /* Espaço acima do parágrafo */
+    text-align: justify;          /* Alinha texto à justificativa */
+}
+
+/* Ícones sociais na seção home */
+.home .social-media {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    width: 100%;               /* Ocupa toda a largura do container */
+}
+
+.home .social-media a {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.home .social-media a:hover {
+    color: var(--main-color);
+    transform: scale(1.1);
+}

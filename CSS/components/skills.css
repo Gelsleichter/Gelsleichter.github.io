@@ -1,0 +1,88 @@
+/* Seção de Habilidades - Estilos Gerais */
+.skills {
+    background-color: var(--bg-color-02); /* Cor de fundo da seção */
+    transition: background-color 0.3s; /* Transição de cor de fundo */
+    min-height: auto;    /* Altura mínima ajustável */
+    padding-bottom: 5rem;  /* Espaçamento inferior da seção */
+}
+
+/* Título da Seção de Habilidades */
+.skills h2 {
+    font-size: 2.2rem; /* Tamanho da fonte do título */
+    margin-bottom: 2rem; /* Espaço abaixo do título */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+/* Container de Habilidades - Layout Responsivo */
+.skills-container {
+    display: grid;  /* Usa grid para layout responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Colunas flexíveis */
+    gap: 1rem;  /* Espaço entre categorias de habilidades */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: flex-start;  /* Alinha itens ao topo */
+    padding-bottom: 0;  /* Remove padding inferior */
+}
+
+/* Categoria de Habilidades - Estilo e Organização */
+.skill-category {
+    display: flex;  /* Usa flexbox para organização */
+    flex-direction: column;  /* Itens em coluna */
+    align-items: flex-start;  /* Alinha itens à esquerda */
+    gap: 0.5rem;  /* Espaço entre elementos da categoria */
+    margin-bottom: 0;  /* Remove margem inferior */
+    background-color: var(--bg-color-01);  /* Cor de fundo da categoria */
+    padding: 1.5rem;  /* Preenchimento interno */
+    border-radius: 1rem;  /* Cantos arredondados */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s, background-color 0.3s; /* Transição de transformação e cor de fundo */
+}
+
+/* Categoria de Habilidades - Efeito de Hover */
+.skill-category:hover {
+    transform: translateY(-5px); /* Efeito de hover */
+}
+
+/* Título da Categoria de Habilidades */
+.skill-category h3 {
+    color: var(--main-color); /* Cor do título */
+    font-size: 1.2rem;  /* Tamanho da fonte do título */
+    margin-bottom: 1rem;  /* Espaço abaixo do título */
+}
+
+/* Conteúdo das Habilidades */
+.skill-content {
+    display: flex;  /* Usa flexbox para organização */
+    flex-direction: column;  /* Itens em coluna */
+    align-items: flex-start;  /* Alinha itens à esquerda */
+    gap: 0.3rem;  /* Espaço entre habilidades */
+}
+
+/* Lista de Habilidades */
+.skill-list {
+    list-style: none;  /* Remove marcadores de lista */
+}
+
+/* Itens da Lista de Habilidades */
+.skill-list li {
+    color: var(--text-color); /* Cor do texto */
+    margin: 0.5rem 0; /* Espaço entre itens */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: color 0.3s; /* Transição de cor */
+}
+
+/* Marcador de Lista de Habilidades */
+.skill-list li:before {
+    content: "•"; /* Marcador de lista */
+    color: var(--main-color); /* Cor do marcador */
+    font-weight: bold; /* Peso da fonte do marcador */
+    display: inline-block; /* Exibe como bloco inline */
+    width: 1em; /* Largura do marcador */
+    margin-left: -1em; /* Espaço à esquerda do marcador */
+}
+
+/* Design Responsivo */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Ajusta layout para telas menores */
+    }
+}

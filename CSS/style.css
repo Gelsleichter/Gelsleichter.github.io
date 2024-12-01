@@ -1,0 +1,207 @@
+/*
+ARQUIVO CSS PRINCIPAL
+Este é o arquivo CSS principal que controla todo o visual do site.
+Ele importa outros arquivos CSS menores para manter o código organizado.
+
+COMO FUNCIONA:
+1. @import: traz outros arquivos CSS para este
+2. * { }: aplica estilos para TODOS os elementos
+3. html { }: configura a base do site
+4. body { }: configura o corpo do site
+
+DICAS PARA INICIANTES:
+- margin: espaço do lado de fora do elemento
+- padding: espaço dentro do elemento
+- box-sizing: como calcular o tamanho total
+- font-family: tipo de letra (fonte) a usar
+*/
+
+/* Importa outros arquivos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importa outros arquivos CSS */
+@import 'components/variables.css';     /* Cores e variáveis */
+@import 'components/reset.css';         /* Reset de estilos */
+@import 'components/header.css';        /* Estilos do cabeçalho */
+@import 'components/sections.css';      /* Estilos das seções */
+@import 'components/skills.css';        /* Seção de habilidades */
+@import 'components/experience.css';    /* Seção de experiência */
+@import 'components/education.css';     /* Seção de educação */
+@import 'components/services.css';      /* Seção de serviços */
+@import 'components/publications.css';  /* Seção de publicações */
+@import 'components/projects.css';      /* Seção de projetos */
+@import 'components/contact.css';       /* Seção de contato */
+@import 'components/footer.css';        /* Rodapé do site */
+
+/* Configurações básicas para todos os elementos */
+* {
+    margin: 0;                /* Remove espaços externos */
+    padding: 0;              /* Remove espaços internos */
+    box-sizing: border-box;  /* Inclui padding no tamanho total */
+    text-decoration: none;   /* Remove sublinhado dos links */
+    border: none;            /* Remove bordas */
+    outline: none;           /* Remove contorno */
+    scroll-behavior: smooth; /* Scroll suave */
+}
+
+/* Configuração da base do site */
+html {
+    font-size: 95%;      /* Aumenta tamanho base da fonte para 12px */
+    overflow-x: hidden;  /* Esconde barra horizontal */
+}
+
+/* Configuração do corpo do site */
+body {
+    background: var(--bg-color);          /* Cor de fundo do tema atual */
+    color: var(--text-color);             /* Cor do texto do tema atual */
+    font-family: 'Poppins', sans-serif;   /* Tipo de letra principal */
+    transition: background 0.3s ease;      /* Transição suave ao mudar tema */
+}
+
+/* Estilo para links */
+a {
+    color: var(--text-color);    /* Cor do texto do tema atual */
+    transition: 0.3s ease;       /* Transição suave ao passar mouse */
+}
+
+a:hover {
+    color: var(--main-color);    /* Cor quando passa o mouse */
+}
+
+/* Estilo para botões */
+.btn {
+    display: inline-block;           /* Permite definir largura/altura */
+    padding: 1.2rem 2.8rem;          /* Espaço interno (cima/baixo, lados) */
+    background: var(--main-color);   /* Cor de fundo do tema atual */
+    border-radius: 4rem;             /* Cantos arredondados */
+    color: var(--bg-color-02);       /* Cor do texto */
+    font-size: 1.6rem;               /* Tamanho da fonte */
+    letter-spacing: .1rem;           /* Espaço entre letras */
+    font-weight: 600;                /* Peso da fonte (negrito) */
+    transition: .5s ease;            /* Transição suave */
+}
+
+.btn:hover {
+    box-shadow: 0 0 1rem var(--main-color);  /* Sombra ao passar mouse */
+}
+
+/* Tema claro */
+body.light-theme {
+    --bg-color: var(--bg-color-light);
+    --bg-color-01: var(--bg-color-01-light);
+    --bg-color-02: var(--bg-color-02-light);
+    --text-color: var(--text-color-light);
+    --main-color: var(--main-color-light);
+    --hover-color: var(--hover-color-light);
+    --shadow-color: var(--shadow-color-light);
+}
+
+/* Tema escuro */
+body.dark-theme {
+    --bg-color: var(--bg-color-dark);
+    --bg-color-01: var(--bg-color-01-dark);
+    --bg-color-02: var(--bg-color-02-dark);
+    --text-color: var(--text-color-dark);
+    --main-color: var(--main-color-dark);
+    --hover-color: var(--hover-color-dark);
+    --shadow-color: var(--shadow-color-dark);
+}
+
+/* Animações de entrada */
+.animate-on-scroll {
+    opacity: 0;              /* Começa invisível */
+    transform: translateY(20px);  /* Começa 20px abaixo */
+    transition: all 0.5s ease;    /* Transição suave */
+}
+
+.animate-on-scroll.animate {
+    opacity: 1;              /* Fica visível */
+    transform: translateY(0);  /* Volta para posição normal */
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+    section {
+        padding: 6rem 2.5rem;
+    }
+
+    .home, .about {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .home-img, .about-img {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .home-content, .about-content {
+        width: 100%;
+    }
+
+    .home-content div {
+        text-align: center;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-box {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .home, .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .home-img, .about-img {
+        max-width: 35%;
+    }
+
+    .home-content, .about-content {
+        width: 50%;
+    }
+
+    .services-box {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .publications-container {
+        grid-template-columns: auto auto;
+    }
+
+    form .input-box input {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    .services-container {
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-img, .about-img {
+        max-width: 25%;
+    }
+
+    .home-content h1 {
+        font-size: 2.7rem;
+    }
+    
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    
+    .publications-container {
+        grid-template-columns: auto auto auto;
+    }
+}

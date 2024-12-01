@@ -1,0 +1,462 @@
+<!-- 
+    Site Portfolio - Data Mundi
+    Todos os textos do site são carregados dinamicamente através do arquivo theme-lang.js
+    Os textos são identificados pelo atributo data-i18n nos elementos HTML
+    Cada seção abaixo contém elementos que são traduzidos automaticamente
+    
+    Estrutura do site:
+    - Header: Menu de navegação e controles de tema/idioma
+    - Home: Informações pessoais e contato
+    - Skills: Habilidades técnicas e profissionais
+    - Experience: Experiências profissionais
+    - Education: Formação acadêmica
+    - Services: Serviços de consultoria oferecidos
+    - Publications: Publicações científicas
+    - Projects: Projetos de pesquisa
+    - Contact: Formulário de contato
+    - About: Informações adicionais
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mundi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="apple-touch-icon" href="img/icon.png">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo" data-i18n="portfolio"></a>
+        
+        <nav class="nav">
+            <a href="#home" data-i18n="home"></a>
+            <a href="#skills" data-i18n="skills"></a>
+            <a href="#experience" data-i18n="experience"></a>
+            <a href="#education" data-i18n="education"></a>
+            <a href="#services" data-i18n="services"></a>
+            <a href="#publications" data-i18n="publications"></a>
+            <a href="#contact" data-i18n="contact"></a>
+            <a href="#about" data-i18n="about"></a>
+        </nav>
+
+        <div class="theme-lang-switcher">
+            <button class="switcher-btn" id="theme-toggle">
+                <i class="ri-moon-line"></i>
+            </button>
+            <button class="switcher-btn" id="lang-toggle">
+                <i class='bx bx-globe'></i>
+                <span>PT</span>
+            </button>
+        </div>
+
+        <div class="menu-hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="nav-responsive">
+            <a href="#home" data-i18n="home"></a>
+            <a href="#skills" data-i18n="skills"></a>
+            <a href="#experience" data-i18n="experience"></a>
+            <a href="#education" data-i18n="education"></a>
+            <a href="#services" data-i18n="services"></a>
+            <a href="#publications" data-i18n="publications"></a>
+            <a href="#contact" data-i18n="contact"></a>
+            <a href="#about" data-i18n="about"></a>
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 data-i18n="home_section.greeting"></h3>
+            <h1 data-i18n="home_section.name"></h1>
+            <h3 data-i18n="home_section.title"></h3>
+            <p data-i18n="home_section.professional_summary"></p>
+            <div class="contact-info">
+                <p><i class="ri-mail-line"></i> <a href="mailto:yurigelsleichter@gmail.com">yurigelsleichter@gmail.com</a></p>
+                <p><i class="ri-phone-line"></i> <a href="https://wa.me/+36706023833" target="_blank">+36 70 6023833</a></p>
+                <p><i class="ri-map-pin-line"></i> <span data-i18n="home_section.address"></span></p>
+                <p><i class="ri-flag-line"></i> <span data-i18n="home_section.nationality"></span></p>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/gelsleichter" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://linkedin.com/in/yurigelsleichter" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://x.com/y_gelsleichter" target="_blank"><i class="ri-twitter-x-fill"></i></a>
+                <a href="https://instagram.com/oficina_do_r" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="mailto:yuri.gelsleichter@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+                <a href="https://wa.me/qr/N7ZWKXS2XDGHL1" target="_blank" title="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+                <a href="https://gelsleichter.github.io/uploads/resume.pdf" target="_blank" title="Curriculum Vitae"><i class="ri-file-text-fill"></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="img/Yuri_ico.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 data-i18n="skills_section.title"></h2>
+        <div class="skills-container">
+            <!-- Programming Skills -->
+            <div class="skill-category">
+                <h3 data-i18n="skills_section.programming"></h3>
+                <div class="skill-content" data-i18n="skills_section.programming_skills"></div>
+            </div>
+
+            <!-- HPC Experience -->
+            <div class="skill-category">
+                <h3 data-i18n="skills_section.hpc"></h3>
+                <div class="skill-content" data-i18n="skills_section.hpc_skills"></div>
+            </div>
+
+            <!-- GIS Software -->
+            <div class="skill-category">
+                <h3 data-i18n="skills_section.gis"></h3>
+                <div class="skill-content" data-i18n="skills_section.gis_skills"></div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="skill-category">
+                <h3 data-i18n="skills_section.data_science"></h3>
+                <div class="skill-content" data-i18n="skills_section.data_science_skills"></div>
+            </div>
+
+            <!-- Digital Skills -->
+            <!-- <div class="skill-category">
+                <h3 data-i18n="skills_section.digital_skills"></h3>
+                <div class="skill-content" data-i18n="skills_section.digital_skills_list"></div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="experience" id="experience">
+        <h2 data-i18n="experience_section.title"></h2>
+        <div class="experience-container">
+            <div class="experience-item">
+                <h3 data-i18n="experience_section.current.title"></h3>
+                <p class="company" data-i18n="experience_section.current.company"></p>
+                <p class="location" data-i18n="experience_section.current.location"></p>
+                <p class="period" data-i18n="experience_section.current.period"></p>
+                <ul>
+                    <li data-i18n="experience_section.current.point1"></li>
+                    <li data-i18n="experience_section.current.point2"></li>
+                    <li data-i18n="experience_section.current.point3"></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 data-i18n="experience_section.datascientist.title"></h3>
+                <p class="company" data-i18n="experience_section.datascientist.company"></p>
+                <p class="location" data-i18n="experience_section.datascientist.location"></p>
+                <p class="period" data-i18n="experience_section.datascientist.period"></p>
+                <ul>
+                    <li data-i18n="experience_section.datascientist.point1"></li>
+                    <li data-i18n="experience_section.datascientist.point2"></li>
+                    <li data-i18n="experience_section.datascientist.point3"></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 data-i18n="experience_section.isric.title"></h3>
+                    <span class="company" data-i18n="experience_section.isric.company"></span>
+                    <div class="location-period">
+                        <span class="location" data-i18n="experience_section.isric.location"></span>
+                        <span class="period" data-i18n="experience_section.isric.period"></span>
+                    </div>
+                </div>
+                <ul>
+                    <li data-i18n="experience_section.isric.point1"></li>
+                    <li data-i18n="experience_section.isric.point2"></li>
+                    <li data-i18n="experience_section.isric.point3"></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 data-i18n="experience_section.teaching.title"></h3>
+                </div>
+                <ul>
+                    <li data-i18n="experience_section.teaching.courses.0"></li>
+                    <li data-i18n="experience_section.teaching.courses.1"></li>
+                    <li data-i18n="experience_section.teaching.courses.2"></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3 data-i18n="experience_section.volunteering.title"></h3>
+                </div>
+                <ul>
+                    <li>
+                        <strong data-i18n="experience_section.volunteering.events.0.event"></strong>
+                        <br>
+                        <span data-i18n="experience_section.volunteering.events.0.location"></span>, 
+                        <span data-i18n="experience_section.volunteering.events.0.date"></span>
+                        <br>
+                        <span data-i18n="experience_section.volunteering.events.0.description"></span>
+                    </li>
+                    <li>
+                        <strong data-i18n="experience_section.volunteering.events.1.event"></strong>
+                        <br>
+                        <span data-i18n="experience_section.volunteering.events.1.location"></span>, 
+                        <span data-i18n="experience_section.volunteering.events.1.date"></span>
+                        <br>
+                        <span data-i18n="experience_section.volunteering.events.1.description"></span>
+                    </li>
+                    <!-- <li>
+                        <strong data-i18n="experience_section.volunteering.events.2.event"></strong>
+                        <br>
+                        <span data-i18n="experience_section.volunteering.events.2.location"></span>, 
+                        <span data-i18n="experience_section.volunteering.events.2.date"></span>
+                        <br>
+                        <span data-i18n="experience_section.volunteering.events.2.description"></span>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="education" id="education">
+        <h2 data-i18n="education_section.title"></h2>
+        <div class="education-container">
+            <div class="education-item">
+                <h3 data-i18n="education_section.phd.degree"></h3>
+                <p class="period" data-i18n="education_section.phd.period"></p>
+                <p class="institution" data-i18n="education_section.phd.institution"></p>
+                <ul>
+                    <li data-i18n="education_section.phd.points.0">∠</li>
+                    <li data-i18n="education_section.phd.points.1">∠</li>
+                    <li data-i18n="education_section.phd.points.2">∠</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3 data-i18n="education_section.bsc.degree"></h3>
+                <p class="period" data-i18n="education_section.bsc.period"></p>
+                <p class="institution" data-i18n="education_section.bsc.institution"></p>
+                <ul>
+                    <li data-i18n="education_section.bsc.points.0">∠</li>
+                    <li data-i18n="education_section.bsc.points.1">∠</li>
+                    <li data-i18n="education_section.bsc.points.2">∠</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services (consultant) section -->
+    <section class="services" id="services">
+        <h2 data-i18n="services_section.title"><span>Consultancy</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="ri-search-line"></i>
+                <h3 data-i18n="services_section.research.title"></h3>
+                <p data-i18n="services_section.research.description"></p>
+                <a href="https://scholar.google.com.br/citations?user=rLytyAYAAAAJ&hl=en&oi=ao" class="btn" data-i18n="services_section.research.button"></a>
+            </div>
+
+            <div class="services-box">
+                <i class="ri-globe-line"></i>
+                <h3 data-i18n="services_section.precision_agriculture.title"></h3>
+                <p data-i18n="services_section.precision_agriculture.description"></p>
+                <a href="https://wa.me/qr/N7ZWKXS2XDGHL1" class="btn" data-i18n="services_section.precision_agriculture.button"></a>
+            </div>
+
+            <div class="services-box">
+                <i class="ri-bar-chart-line"></i>
+                <h3 data-i18n="services_section.data_analysis.title"></h3>
+                <p data-i18n="services_section.data_analysis.description"></p>
+                <a href="https://wa.me/qr/N7ZWKXS2XDGHL1" class="btn" data-i18n="services_section.data_analysis.button"></a>
+            </div>
+        </div>
+    </section>
+    <!-- /Services (consultant) section -->
+
+    <!-- Publications section -->
+    <section class="publications" id="publications">
+        <h2 data-i18n="latest_publications"><span>Publications</span></h2>
+        
+        <div class="publications-container">
+            <div class="publication-box">
+                <img src="img/publications/spc.png" alt="Spectroscopy research">
+                <div class="publication-layer">
+                    <h3>Spectroscopy Supported Definition and Classification of Sandy Soils in Hungary</h3>
+                    <p class="authors">Erika Michéli, Márta Fuchs, Yuri Gelsleichter, Mohammed Zein, Ádám Csorba</p>
+                    <p class="year">2024</p>
+                    <p class="doi">DOI: <a href="https://doi.org/10.1007/9" target="_blank">doi.org/10.1007/9</a></p>
+                    <a href="https://doi.org/10.1007/9" target="_blank"><i class="ri-link"></i></a>
+                </div>
+            </div>
+
+            <div class="publication-box">
+                <img src="img/publications/hsm.jpg" alt="Soil mapping research">
+                <div class="publication-layer">
+                    <h3>Enhancing Soil Mapping with Hyperspectral Subsurface Images generated from soil lab Vis-SWIR spectra tested in southern Brazil</h3>
+                    <p class="authors">Gelsleichter, Y.A.; Costa, E.M.; Anjos, L.H.C.; Marcondes, R.A.T.</p>
+                    <p class="year">2023</p>
+                    <p class="doi">DOI: <a href="https://doi.org/10.1016/j.geodrs.2023.e00641" target="_blank">10.1016/j.geodrs.2023.e00641</a></p>
+                    <p class="description">Developed Hyperspectral Soil Mapping by integrating lab-based Vis-SWIR spectra with Digital Soil Mapping to improve soil property predictions.</p>
+                    <a href="https://doi.org/10.1016/j.geodrs.2023.e00641" target="_blank"><i class="ri-link"></i></a>
+                </div>
+            </div>
+
+            <div class="publication-box">
+                <img src="img/publications/arima.png" alt="Climate change research">
+                <div class="publication-layer">
+                    <h3>Past and Future Responses of Soil Water to Climate Change in Tropical and Subtropical Rainforest Systems in South America</h3>
+                    <p class="authors">Arévalo, S.M.M. et al.</p>
+                    <p class="year">2023</p>
+                    <p class="doi">DOI: <a href="https://doi.org/10.3390/atmos14040755" target="_blank">10.3390/atmos14040755</a></p>
+                    <a href="https://doi.org/10.3390/atmos14040755" target="_blank"><i class="ri-link"></i></a>
+                </div>
+            </div>
+
+            <div class="publication-box">
+                <img src="img/publications/arima2.png" alt="South American biomes">
+                <div class="publication-layer">
+                    <h3>Degradation of South American biomes: What to expect for the future?</h3>
+                    <p class="authors">Delgado, R.C.; Santana, R.O.; Gelsleichter, Y.A.; Pereira, M.G.</p>
+                    <p class="year">2022</p>
+                    <p class="doi">DOI: <a href="https://doi.org/10.1016/j.eiar.2022.106815" target="_blank">10.1016/j.eiar.2022.106815</a></p>
+                    <a href="https://doi.org/10.1016/j.eiar.2022.106815" target="_blank"><i class="ri-link"></i></a>
+                </div>
+            </div>
+
+            <div class="publication-box">
+                <img src="img/publications/pni_des.png" alt="Soil properties mapping">
+                <div class="publication-layer">
+                    <h3>Mapping soil properties in a poorly-accessible area</h3>
+                    <p class="authors">Costa, E.M.; Pinheiro, H.S.K.; Anjos, L.H.C.; Marcondes, R.A.T.; Gelsleichter, Y.A.</p>
+                    <p class="year">2020</p>
+                    <p class="doi">DOI: <a href="https://doi.org/10.36783/18069657rbcs20190107" target="_blank">10.36783/18069657rbcs20190107</a></p>
+                    <a href="https://doi.org/10.36783/18069657rbcs20190107" target="_blank"><i class="ri-link"></i></a>
+                </div>
+            </div>
+
+            <div class="publication-box">
+                <img src="img/publications/pni.jpg" alt="Bayesian networks research">
+                <div class="publication-layer">
+                    <h3>Spatial Bayesian belief networks: a participatory approach for mapping environmental vulnerability at the Itatiaia National Park, Brazil</h3>
+                    <p class="authors">Costa, E.M.; Pinheiro, H.S.K.; Anjos, L.H.C.; Gelsleichter, Y.A.; Marcondes, R.A.T.</p>
+                    <p class="year">2020</p>
+                    <p class="doi">DOI: <a href="https://doi.org/10.1007/s12665-020-09099-9" target="_blank">10.1007/s12665-020-09099-9</a></p>
+                    <a href="https://doi.org/10.1007/s12665-020-09099-9" target="_blank"><i class="ri-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Publications section -->
+
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 data-i18n="projects_section.title"></h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <h3 data-i18n="projects_section.soils4africa.title"></h3>
+                <p class="period" data-i18n="projects_section.soils4africa.period"></p>
+                <p class="website">
+                    <a href="https://www.soils4africa.eu/" target="_blank" data-i18n="projects_section.soils4africa.link"></a>
+                </p>
+                <p class="description" data-i18n="projects_section.soils4africa.description"></p>
+                <p class="participation" data-i18n="projects_section.soils4africa.participation"></p>
+                <div class="tags">
+                    <span class="tag" data-i18n="projects_section.soils4africa.tags.0"></span>
+                    <span class="tag" data-i18n="projects_section.soils4africa.tags.1"></span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3 data-i18n="projects_section.osiris.title"></h3>
+                <p class="period" data-i18n="projects_section.osiris.period"></p>
+                <p class="website">
+                    <a href="https://osiris4r.eu/" target="_blank" data-i18n="projects_section.osiris.link"></a>
+                </p>
+                <p class="description" data-i18n="projects_section.osiris.description"></p>
+                <p class="participation" data-i18n="projects_section.osiris.participation"></p>
+                <div class="tags">
+                    <span class="tag" data-i18n="projects_section.osiris.tags.0"></span>
+                    <span class="tag" data-i18n="projects_section.osiris.tags.1"></span>
+                    <span class="tag" data-i18n="projects_section.osiris.tags.2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+     <section class="contact" id="contact">
+        <h2 data-i18n="contact_section.contact_me"><span>Contact Me!</span></h2>
+
+        <!-- Aqui trabalha com back end, cadastro de clientes, enevio de email
+         vou usar o formspree para fazer esse 'serviço de backend-->
+                
+        <form action="https://formspree.io/f/mzzpgnzo" method="POST" enctype="multipart/form-data">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <textarea id="message" name="message" cols="30" rows="8" placeholder="Message"></textarea>
+
+            <button type="submit" class="btn" data-i18n="contact_section.send"></button>
+
+            <!-- DELETAR
+            <button type="submit">Send</button> -->
+        </form>
+     </section>
+
+    <!-- /Contact section -->
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/Yuri_sem_fundo.PNG" alt="Yuri Gelsleichter">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading" data-i18n="about_section.title">About Me</h2>
+            <p data-i18n="about_section.content"></p>
+        </div>
+    </section>
+    <!-- /About section -->
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://github.com/gelsleichter" target="_blank" title="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://linkedin.com/in/yurigelsleichter" target="_blank" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://x.com/y_gelsleichter" target="_blank" title="X"><i class="ri-twitter-x-fill"></i></a>
+                <a href="https://instagram.com/oficina_do_r" target="_blank" title="Instagram"><i class="ri-instagram-fill"></i></a>
+                <a href="mailto:yuri.gelsleichter@gmail.com" title="Email"><i class="ri-mail-line"></i></a>
+                <a href="https://wa.me/qr/N7ZWKXS2XDGHL1" target="_blank" title="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+                <a href="https://gelsleichter.github.io/uploads/resume.pdf" target="_blank" title="Curriculum Vitae"><i class="ri-file-text-fill"></i></a>
+            </div>
+            <p class="footer-text" data-i18n="footer.copyright">2024 Yuri Gelsleichter</p>
+            <p class="footer-bottom" data-i18n="footer.description">Data Scientist | Researcher | Geospatial Analyst</p>
+        </div>
+    </footer>
+    <!-- /Footer Section -->
+    
+    <!-- Java script, sempre no fiu da página, pode ser depois de body ou html -->
+    <!-- Isso vai chamar o codigo do script js -->
+    <script src="js/script.js"></script>
+    <script src="js/theme-lang.js"></script>
+
+</body>
+</html>

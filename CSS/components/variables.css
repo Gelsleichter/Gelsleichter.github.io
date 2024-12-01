@@ -1,0 +1,91 @@
+/*
+ARQUIVO DE VARIÁVEIS CSS
+Este arquivo define as cores e valores que são usados em todo o site.
+Usando variáveis CSS (--nome-da-variavel) podemos facilmente mudar cores em todo o site
+mudando apenas aqui.
+
+COMO FUNCIONA:
+1. Definimos as cores para o tema claro (light theme)
+2. Definimos as cores para o tema escuro (dark theme)
+3. O JavaScript troca entre os temas mudando a classe do <body>
+
+DICAS PARA INICIANTES:
+- :root { } : define variáveis globais para todo o site
+- var(--nome-da-variavel): usa uma variável definida aqui
+- Cores podem ser definidas com:
+  * Hexadecimal: #ffffff (branco)
+  * RGB: rgb(255, 255, 255) (branco)
+  * RGBA: rgba(255, 255, 255, 0.5) (branco com 50% de transparência)
+*/
+
+:root {
+    /* Cores do tema claro (padrão) */
+    --bg-color-light: #f5f5f5;          /* Cor de fundo principal */
+    --bg-color-01-light: #e8e8e8;       /* Cor de fundo secundária */
+    --bg-color-02-light: #f0f0f0;       /* Cor de fundo terciária */
+    --text-color-light: #333333;        /* Cor do texto principal */
+    --text-color-grey: #797979;        /* Cor do texto cinza */
+    --main-color-light: #66b2b2;        /* Cor de destaque (links, botões) */
+    --hover-color-light: rgba(102, 178, 178, 0.1); /* Cor quando passa o mouse */
+    --shadow-color-light: rgba(0, 0, 0, 0.1);    /* Cor das sombras */
+
+    /* Cores do tema escuro */
+    --bg-color-dark: #1f242d;     /* Fundo escuro principal */
+    --bg-color-01-dark: #1f242d;  /* Fundo escuro secundário */
+    --bg-color-02-dark: #323946;  /* Fundo escuro terciário */
+    --text-color-dark: #ffffff;   /* Texto no tema escuro */
+    --main-color-dark: #00eeff;   /* Cor de destaque no tema escuro */
+    --hover-color-dark: rgba(0, 238, 255, 0.2); /* Hover no tema escuro */
+    --shadow-color-dark: #0000001a; /* Sombras no tema escuro */
+
+    /* Default theme (light) */
+    --bg-color: var(--bg-color-light);
+    --bg-color-01: var(--bg-color-01-light);
+    --bg-color-02: var(--bg-color-02-light);
+    --text-color: var(--text-color-light);
+    --main-color: var(--main-color-light);
+    --hover-color: var(--hover-color-light);
+    --shadow-color: var(--shadow-color-light);
+}
+
+/* 
+Quando o sistema tem o tema escuro definido, 
+usamos as cores do tema escuro 
+*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: var(--bg-color-dark);
+        --bg-color-01: var(--bg-color-01-dark);
+        --bg-color-02: var(--bg-color-02-dark);
+        --text-color: var(--text-color-dark);
+        --main-color: var(--main-color-dark);
+        --hover-color: var(--hover-color-dark);
+        --shadow-color: var(--shadow-color-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: var(--bg-color-light);
+        --bg-color-01: var(--bg-color-01-light);
+        --bg-color-02: var(--bg-color-02-light);
+        --text-color: var(--text-color-light);
+        --main-color: var(--main-color-light);
+        --hover-color: var(--hover-color-light);
+        --shadow-color: var(--shadow-color-light);
+    }
+}
+
+/* 
+Quando o body tem a classe .dark, 
+usamos as cores do tema escuro 
+*/
+body.dark {
+    --bg-color: var(--bg-color-dark);
+    --bg-color-01: var(--bg-color-01-dark);
+    --bg-color-02: var(--bg-color-02-dark);
+    --text-color: var(--text-color-dark);
+    --main-color: var(--main-color-dark);
+    --hover-color: var(--hover-color-dark);
+    --shadow-color: var(--shadow-color-dark);
+}
