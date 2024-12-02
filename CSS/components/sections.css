@@ -17,7 +17,7 @@ DICAS PARA INICIANTES:
 /* Estilo base para todas as seções */
 section {
     min-height: 50vh;             /* Altura mínima de 100% da tela */
-    padding: 4rem 4rem 2rem;       /* Espaço interno (topo direita baixo) */
+    padding: 8rem 4rem 2rem;      /* Espaço interno (topo direita baixo) top: 8rem; direita: 4rem; baixo: 2rem */
 }
 
 /* Seções de início e sobre */
