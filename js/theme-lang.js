@@ -44,7 +44,7 @@ const translations = {
 
         // Home section
         "home_section": {
-            "greeting": " ", //"Hi, I'm",
+            "greeting": "\n\n\n", //"Hi, I'm",
             "name": "Yuri Gelsleichter",
             "title": "Researcher in Soil and Geomatics",
             "professional_summary": "Accomplished researcher and educator specializing in Geomatics and coding, with a strong foundation in Digital Soil Mapping, Proximal Soil Sensing, and Data Visualization. Holds a Ph.D. in Science, Technology, and Innovation in Agriculture. Demonstrated proficiency in R programming and Javascript for Google Earth Engine, machine learning techniques, and data analytics. Experienced in international collaborations and committed to advancing computational reproducibility and Open Science principles. Currently, Co-chair of Communication working group for International Soil Judging Sep 2024",
@@ -247,7 +247,7 @@ const translations = {
 
         // Seção Home
         "home_section": {
-            "greeting": " ", //"Olá, eu sou",
+            "greeting": "\n\n\n", //"Olá, eu sou",
             "name": "Yuri Gelsleichter",
             "title": "Pesquisador em Solos e Geomática",
             "professional_summary": "Pesquisador e educador especializado em Geomática e programação, com sólida formação em Mapeamento Digital de Solos, Sensoriamento Proximal de Solos e Visualização de Dados. Doutor em Ciência, Tecnologia e Inovação em Agricultura. Demonstrada proficiência em programação R e Javascript para Google Earth Engine, técnicas de aprendizado de máquina e análise de dados. Experiência em colaborações internacionais e comprometido com o avanço da reprodutibilidade computacional e princípios da Ciência Aberta. Atualmente, coordenador conjunto de comunicação para o grupo de trabalho para o International Soil Judging",
